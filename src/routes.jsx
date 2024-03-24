@@ -19,7 +19,7 @@ export const routes = [
     pages: [
       {
         icon: <HomeIcon {...icon} />,
-        name: "painel administrativo",
+        name: "dashboard",
         path: "/home",
         element: <Home />,
       },
