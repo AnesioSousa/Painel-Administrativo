@@ -1,31 +1,31 @@
-import React from "react";
 import {
-  Typography,
-  Card,
-  CardHeader,
-  CardBody,
-  IconButton,
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
-  Avatar,
-  Tooltip,
-  Progress,
-} from "@material-tailwind/react";
-import {
-  EllipsisVerticalIcon,
-  ArrowUpIcon,
-} from "@heroicons/react/24/outline";
+  ordersOverviewData,
+  projectsTableData,
+  statisticsCardsData,
+  statisticsChartsData,
+} from "@/data";
 import { StatisticsCard } from "@/widgets/cards";
 import { StatisticsChart } from "@/widgets/charts";
 import {
-  statisticsCardsData,
-  statisticsChartsData,
-  projectsTableData,
-  ordersOverviewData,
-} from "@/data";
+  ArrowUpIcon,
+  EllipsisVerticalIcon,
+} from "@heroicons/react/24/outline";
 import { CheckCircleIcon, ClockIcon } from "@heroicons/react/24/solid";
+import {
+  Avatar,
+  Card,
+  CardBody,
+  CardHeader,
+  IconButton,
+  Menu,
+  MenuHandler,
+  MenuItem,
+  MenuList,
+  Progress,
+  Tooltip,
+  Typography,
+} from "@material-tailwind/react";
+import React from "react";
 
 export function Home() {
   return (
@@ -75,14 +75,14 @@ export function Home() {
           >
             <div>
               <Typography variant="h6" color="blue-gray" className="mb-1">
-                Projects
+                Projetos
               </Typography>
               <Typography
                 variant="small"
                 className="flex items-center gap-1 font-normal text-blue-gray-600"
               >
                 <CheckCircleIcon strokeWidth={3} className="h-4 w-4 text-blue-gray-200" />
-                <strong>30 done</strong> this month
+                <strong>30 concluídos</strong> neste mês
               </Typography>
             </div>
             <Menu placement="left-start">
@@ -96,9 +96,9 @@ export function Home() {
                 </IconButton>
               </MenuHandler>
               <MenuList>
-                <MenuItem>Action</MenuItem>
-                <MenuItem>Another Action</MenuItem>
-                <MenuItem>Something else here</MenuItem>
+                <MenuItem>Neste local pode ser oferecida alguma funcionalidade</MenuItem>
+                <MenuItem>Uma outra funcionalidade</MenuItem>
+                <MenuItem>Mais uma funcionalidade</MenuItem>
               </MenuList>
             </Menu>
           </CardHeader>
@@ -106,7 +106,7 @@ export function Home() {
             <table className="w-full min-w-[640px] table-auto">
               <thead>
                 <tr>
-                  {["companies", "members", "budget", "completion"].map(
+                  {["task", "time", "orçamento", "progresso"].map(
                     (el) => (
                       <th
                         key={el}
@@ -214,7 +214,7 @@ export function Home() {
               <strong>24%</strong> this month
             </Typography>
           </CardHeader>
-          <CardBody className="pt-0">
+          <CardBody className="pt-6 border-6 border-sky-500">
             {ordersOverviewData.map(
               ({ icon, color, title, description }, key) => (
                 <div key={title} className="flex items-start gap-4 py-3">

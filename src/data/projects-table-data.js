@@ -1,15 +1,17 @@
+import { faker } from '@faker-js/faker';
+
 export const projectsTableData = [
   {
-    img: "/img/logo-xd.svg",
-    name: "Material XD Version",
+    img: faker.image.urlLoremFlickr({ category: 'business' }),
+    name: faker.commerce.productName(),
     members: [
-      { img: "/img/team-1.jpeg", name: "Romina Hadid" },
-      { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
-      { img: "/img/team-3.jpeg", name: "Jessica Doe" },
-      { img: "/img/team-4.jpeg", name: "Alexander Smith" },
+      { img: faker.image.avatar(), name: faker.person.fullName() },
+      { img: "/img/team-2.jpeg", name: faker.person.fullName() },
+      { img: "/img/team-3.jpeg", name: faker.person.fullName()},
+      { img: "/img/team-4.jpeg", name: faker.person.fullName() },
     ],
-    budget: "$14,000",
-    completion: 60,
+    budget: "R$ 14,000",
+    completion: 75,
   },
   {
     img: "/img/logo-atlassian.svg",

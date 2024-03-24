@@ -1,30 +1,30 @@
-import { useLocation, Link } from "react-router-dom";
 import {
-  Navbar,
-  Typography,
+  setOpenConfigurator,
+  setOpenSidenav,
+  useMaterialTailwindController,
+} from "@/context";
+import {
+  Bars3Icon,
+  BellIcon,
+  ClockIcon,
+  Cog6ToothIcon,
+  CreditCardIcon,
+  UserCircleIcon,
+} from "@heroicons/react/24/solid";
+import {
+  Avatar,
+  Breadcrumbs,
   Button,
   IconButton,
-  Breadcrumbs,
   Input,
   Menu,
   MenuHandler,
-  MenuList,
   MenuItem,
-  Avatar,
+  MenuList,
+  Navbar,
+  Typography,
 } from "@material-tailwind/react";
-import {
-  UserCircleIcon,
-  Cog6ToothIcon,
-  BellIcon,
-  ClockIcon,
-  CreditCardIcon,
-  Bars3Icon,
-} from "@heroicons/react/24/solid";
-import {
-  useMaterialTailwindController,
-  setOpenConfigurator,
-  setOpenSidenav,
-} from "@/context";
+import { Link, useLocation } from "react-router-dom";
 
 export function DashboardNavbar() {
   const [controller, dispatch] = useMaterialTailwindController();
@@ -73,7 +73,7 @@ export function DashboardNavbar() {
         </div>
         <div className="flex items-center">
           <div className="mr-auto md:mr-4 md:w-56">
-            <Input label="Search" />
+            <Input label="Pesquise algo..." />
           </div>
           <IconButton
             variant="text"

@@ -1,5 +1,4 @@
-import PropTypes from "prop-types";
-import { Link, NavLink } from "react-router-dom";
+import { setOpenSidenav, useMaterialTailwindController } from "@/context";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import {
   Avatar,
@@ -7,7 +6,8 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
-import { useMaterialTailwindController, setOpenSidenav } from "@/context";
+import PropTypes from "prop-types";
+import { Link, NavLink } from "react-router-dom";
 
 export function Sidenav({ brandImg, brandName, routes }) {
   const [controller, dispatch] = useMaterialTailwindController();
@@ -97,7 +97,7 @@ export function Sidenav({ brandImg, brandName, routes }) {
 
 Sidenav.defaultProps = {
   brandImg: "/img/logo-ct.png",
-  brandName: "Material Tailwind React",
+  brandName: "Uma janela de navegação do app",
 };
 
 Sidenav.propTypes = {

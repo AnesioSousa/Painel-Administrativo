@@ -1,13 +1,13 @@
+import { SignIn, SignUp } from "@/pages/auth";
+import { Home, Notifications, Profile, Tables } from "@/pages/dashboard";
 import {
   HomeIcon,
-  UserCircleIcon,
-  TableCellsIcon,
   InformationCircleIcon,
-  ServerStackIcon,
   RectangleStackIcon,
+  ServerStackIcon,
+  TableCellsIcon,
+  UserCircleIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
-import { SignIn, SignUp } from "@/pages/auth";
 
 const icon = {
   className: "w-5 h-5 text-inherit",
@@ -44,18 +44,18 @@ export const routes = [
     ],
   },
   {
-    title: "auth pages",
+    title: "Veja as páginas de autenticação de usuário:",
     layout: "auth",
     pages: [
       {
         icon: <ServerStackIcon {...icon} />,
-        name: "sign in",
+        name: "Login",
         path: "/sign-in",
         element: <SignIn />,
       },
       {
         icon: <RectangleStackIcon {...icon} />,
-        name: "sign up",
+        name: "Cadastre-se",
         path: "/sign-up",
         element: <SignUp />,
       },
