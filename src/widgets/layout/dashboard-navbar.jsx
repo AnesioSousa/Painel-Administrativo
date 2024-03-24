@@ -90,7 +90,7 @@ export function DashboardNavbar() {
               className="hidden items-center gap-1 px-4 xl:flex normal-case"
             >
               <UserCircleIcon className="h-5 w-5 text-blue-gray-500" />
-              Sign In
+              Fazer login
             </Button>
             <IconButton
               variant="text"
@@ -120,14 +120,14 @@ export function DashboardNavbar() {
                     color="blue-gray"
                     className="mb-1 font-normal"
                   >
-                    <strong>New message</strong> from Laur
+                    <strong>Nova mensagem</strong> de Rodrigo
                   </Typography>
                   <Typography
                     variant="small"
                     color="blue-gray"
                     className="flex items-center gap-1 text-xs font-normal opacity-60"
                   >
-                    <ClockIcon className="h-3.5 w-3.5" /> 13 minutes ago
+                    <ClockIcon className="h-3.5 w-3.5" /> 13 minutos atrás
                   </Typography>
                 </div>
               </MenuItem>
@@ -144,14 +144,14 @@ export function DashboardNavbar() {
                     color="blue-gray"
                     className="mb-1 font-normal"
                   >
-                    <strong>New album</strong> by Travis Scott
+                    <strong>Novo album</strong> por Travis Scott
                   </Typography>
                   <Typography
                     variant="small"
                     color="blue-gray"
                     className="flex items-center gap-1 text-xs font-normal opacity-60"
                   >
-                    <ClockIcon className="h-3.5 w-3.5" /> 1 day ago
+                    <ClockIcon className="h-3.5 w-3.5" /> 1 dia atrás
                   </Typography>
                 </div>
               </MenuItem>
@@ -165,14 +165,14 @@ export function DashboardNavbar() {
                     color="blue-gray"
                     className="mb-1 font-normal"
                   >
-                    Payment successfully completed
+                    Pagamento realizado com sucesso!
                   </Typography>
                   <Typography
                     variant="small"
                     color="blue-gray"
                     className="flex items-center gap-1 text-xs font-normal opacity-60"
                   >
-                    <ClockIcon className="h-3.5 w-3.5" /> 2 days ago
+                    <ClockIcon className="h-3.5 w-3.5" /> 2 dias atrás
                   </Typography>
                 </div>
               </MenuItem>
