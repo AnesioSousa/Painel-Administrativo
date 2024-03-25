@@ -126,12 +126,7 @@ export function Home() {
               <tbody>
                 {projectsTableData.map(
                   ({ img, name, members, budget, completion }, key) => {
-                    const className = `py-3 px-5 ${
-                      key === projectsTableData.length - 1
-                        ? ""
-                        : "border-b border-blue-gray-50"
-                    }`;
-
+                    const className = `py-3 px-5 ${key === projectsTableData.length - 1 ? "": "border-b border-blue-gray-50"}`;
                     return (
                       <tr key={name}>
                         <td className={className}>
