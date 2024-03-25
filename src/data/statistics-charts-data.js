@@ -6,7 +6,7 @@ const websiteViewsChart = {
   series: [
     {
       name: "Views",
-      data: [50, 20, 10, 22, 50, 10, 40],
+      data: [50, 35, 10, 22, 50, 10, 40],
     },
   ],
   options: {
@@ -20,7 +20,7 @@ const websiteViewsChart = {
     },
     xaxis: {
       ...chartsConfig.xaxis,
-      categories: ["M", "T", "W", "T", "F", "S", "S"],
+      categories: ["S", "T", "Q", "Q", "S", "S", "D"],
     },
   },
 };
@@ -46,15 +46,15 @@ const dailySalesChart = {
     xaxis: {
       ...chartsConfig.xaxis,
       categories: [
-        "Apr",
-        "May",
+        "Abr",
+        "Mai",
         "Jun",
         "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
+        "Ago",
+        "Set",
+        "Out",
         "Nov",
-        "Dec",
+        "Dez",
       ],
     },
   },
@@ -81,15 +81,15 @@ const completedTaskChart = {
     xaxis: {
       ...chartsConfig.xaxis,
       categories: [
-        "Apr",
-        "May",
+        "Abr",
+        "Mai",
         "Jun",
         "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
+        "Ago",
+        "Set",
+        "Out",
         "Nov",
-        "Dec",
+        "Dez",
       ],
     },
   },
@@ -107,23 +107,23 @@ const completedTasksChart = {
 export const statisticsChartsData = [
   {
     color: "white",
-    title: "Website View",
-    description: "Last Campaign Performance",
-    footer: "campaign sent 2 days ago",
+    title: "Visualizações do Site",
+    description: "Performance da Última Campanha",
+    footer: "nova campanha iniciada há 2 dias atrás",
     chart: websiteViewsChart,
   },
   {
     color: "white",
-    title: "Daily Sales",
-    description: "15% increase in today sales",
-    footer: "updated 4 min ago",
+    title: "Vendas Diárias",
+    description: "15% de aumento nas vendas de hoje",
+    footer: "atualizado 4 min atrás",
     chart: dailySalesChart,
   },
   {
     color: "white",
-    title: "Completed Tasks",
-    description: "Last Campaign Performance",
-    footer: "just updated",
+    title: "Tasks Concluídas",
+    description: "Performance do Último Ano",
+    footer: "atualizada agora",
     chart: completedTasksChart,
   },
 ];
